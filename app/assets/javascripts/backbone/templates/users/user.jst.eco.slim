@@ -1,0 +1,10 @@
+td
+  = link_to "<%= @username %>".html_safe, "#/users/<%= @id %>".html_safe
+td= '<%= @first_name %>'.html_safe
+td= '<%= @last_name %>'.html_safe
+td= '<%= @age %>'.html_safe
+td= '<%= @email %>'.html_safe
+td
+  a.icon-edit href=="#/users/<%= @id %>/edit"
+td
+  a.destroy.icon-remove href=="#/users"

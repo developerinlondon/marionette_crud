@@ -1,0 +1,31 @@
+h1 Edit user
+form#edit-user.form-horizontal name="user"
+  .control-group
+    label.control-label for="username"
+      | username
+    .controls
+     input#name name="username" type="text" value=="<%= @username %>"
+  .control-group
+    label.control-label for="first_name"
+      | first name
+    .controls
+     input#name name="first_name" type="text" value=="<%= @first_name %>"
+  .control-group
+    label.control-label for="last_name"
+      | last name
+    .controls
+     input#name name="last_name" type="text" value=="<%= @last_name %>"
+  .control-group
+    label.control-label for="age"
+      | age
+    .controls
+     input#name name="age" type="text" value=="<%= @age %>"
+  .control-group
+    label.control-label for="email"
+      | email
+    .controls
+      input#email name="email" type="email" value=="<%= @email %>"
+  .control-group
+    .controls
+      input.btn type="submit" value="Update User"
+a href="#/users" Back

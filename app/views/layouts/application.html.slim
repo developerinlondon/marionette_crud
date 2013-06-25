@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    meta content="width=device-width, initial-scale=1.0" name="viewport" /
+    title= "Marionette Crud Demo"
+    = stylesheet_link_tag "application", :media => "all"
+    = javascript_include_tag "backbone/application"
+    -#    = javascript_include_tag_for_admin_panel @admin_panel_name
+    = csrf_meta_tags
+    = yield(:head)
+  body class=("#{controller_name} #{action_name}")
+    .container-fluid
+      .row-fluid
+        #page-content.span9
+          #marionettecrud_content
