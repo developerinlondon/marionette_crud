@@ -30,7 +30,7 @@
 
 $ ->
   Dashboard.start()
-  ajaxLoader()
+
 
 
 
